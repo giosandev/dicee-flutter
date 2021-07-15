@@ -7,6 +7,7 @@ void main() {
         backgroundColor: Colors.red,
         appBar: AppBar(
           title: Text('Dicee'),
+          centerTitle: true,
           backgroundColor: Colors.red,
         ),
         body: DicePage(),
@@ -18,6 +19,15 @@ void main() {
 class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Row(
+      children: [
+        Image(
+          image: AssetImage('images/dice1.png'),
+        ),
+        Image(
+          image: AssetImage('images/dice2.png'),
+        ),
+      ],
+    );
   }
 }
