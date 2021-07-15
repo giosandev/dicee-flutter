@@ -23,8 +23,8 @@ class DicePage extends StatefulWidget {
 }
 
 class _DicePageState extends State<DicePage> {
-  int leftDiceNumber = 1;
-  int rightDiceNumber = 1;
+  int leftDiceNumber = new Random().nextInt(6) + 1;
+  int rightDiceNumber = new Random().nextInt(6) + 1;
 
   // test function to randomize the dice
   void randomize() {
